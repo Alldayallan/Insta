@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C0A4445D321C615533F4C6B /* Pods_Insta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D1FE7BA07591B7E4AD8D0E /* Pods_Insta.framework */; };
+		FD207A5A25D8ACB900814757 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207A5925D8ACB900814757 /* FeedViewController.swift */; };
+		FD207A5D25D8AD0900814757 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207A5C25D8AD0900814757 /* UploadViewController.swift */; };
+		FD207A6025D8AD3B00814757 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207A5F25D8AD3B00814757 /* SettingsViewController.swift */; };
 		FDFC58D225D86C160058A844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC58D125D86C160058A844 /* AppDelegate.swift */; };
 		FDFC58D425D86C160058A844 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC58D325D86C160058A844 /* SceneDelegate.swift */; };
 		FDFC58D625D86C160058A844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC58D525D86C160058A844 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 		8181E1FDB605D95573CC6244 /* Pods-Insta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta.debug.xcconfig"; path = "Target Support Files/Pods-Insta/Pods-Insta.debug.xcconfig"; sourceTree = "<group>"; };
 		81D1FE7BA07591B7E4AD8D0E /* Pods_Insta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2846B16F162BBBA3945E863 /* Pods-Insta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta.release.xcconfig"; path = "Target Support Files/Pods-Insta/Pods-Insta.release.xcconfig"; sourceTree = "<group>"; };
+		FD207A5925D8ACB900814757 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		FD207A5C25D8AD0900814757 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		FD207A5F25D8AD3B00814757 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FDFC58CE25D86C160058A844 /* Insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFC58D125D86C160058A844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDFC58D325D86C160058A844 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +56,6 @@
 				8181E1FDB605D95573CC6244 /* Pods-Insta.debug.xcconfig */,
 				A2846B16F162BBBA3945E863 /* Pods-Insta.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,6 +91,9 @@
 				FDFC58D125D86C160058A844 /* AppDelegate.swift */,
 				FDFC58D325D86C160058A844 /* SceneDelegate.swift */,
 				FDFC58D525D86C160058A844 /* ViewController.swift */,
+				FD207A5925D8ACB900814757 /* FeedViewController.swift */,
+				FD207A5C25D8AD0900814757 /* UploadViewController.swift */,
+				FD207A5F25D8AD3B00814757 /* SettingsViewController.swift */,
 				FDFC58D725D86C160058A844 /* Main.storyboard */,
 				FDFC58DA25D86C170058A844 /* Assets.xcassets */,
 				FDFC58DC25D86C170058A844 /* LaunchScreen.storyboard */,
@@ -211,8 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDFC58D625D86C160058A844 /* ViewController.swift in Sources */,
+				FD207A5D25D8AD0900814757 /* UploadViewController.swift in Sources */,
 				FDFC58D225D86C160058A844 /* AppDelegate.swift in Sources */,
+				FD207A5A25D8ACB900814757 /* FeedViewController.swift in Sources */,
 				FDFC58D425D86C160058A844 /* SceneDelegate.swift in Sources */,
+				FD207A6025D8AD3B00814757 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
