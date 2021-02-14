@@ -11,11 +11,11 @@
 		FD207A5A25D8ACB900814757 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207A5925D8ACB900814757 /* FeedViewController.swift */; };
 		FD207A5D25D8AD0900814757 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207A5C25D8AD0900814757 /* UploadViewController.swift */; };
 		FD207A6025D8AD3B00814757 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207A5F25D8AD3B00814757 /* SettingsViewController.swift */; };
+		FD207A6525D8D2D900814757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD207A6425D8D2D900814757 /* Assets.xcassets */; };
 		FDFC58D225D86C160058A844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC58D125D86C160058A844 /* AppDelegate.swift */; };
 		FDFC58D425D86C160058A844 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC58D325D86C160058A844 /* SceneDelegate.swift */; };
 		FDFC58D625D86C160058A844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC58D525D86C160058A844 /* ViewController.swift */; };
 		FDFC58D925D86C160058A844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFC58D725D86C160058A844 /* Main.storyboard */; };
-		FDFC58DB25D86C170058A844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFC58DA25D86C170058A844 /* Assets.xcassets */; };
 		FDFC58DE25D86C170058A844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFC58DC25D86C170058A844 /* LaunchScreen.storyboard */; };
 		FDFC58E725D870340058A844 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDFC58E625D870340058A844 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -27,12 +27,12 @@
 		FD207A5925D8ACB900814757 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		FD207A5C25D8AD0900814757 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		FD207A5F25D8AD3B00814757 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FD207A6425D8D2D900814757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDFC58CE25D86C160058A844 /* Insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFC58D125D86C160058A844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDFC58D325D86C160058A844 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FDFC58D525D86C160058A844 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDFC58D825D86C160058A844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FDFC58DA25D86C170058A844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDFC58DD25D86C170058A844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDFC58DF25D86C170058A844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDFC58E625D870340058A844 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				FD207A5C25D8AD0900814757 /* UploadViewController.swift */,
 				FD207A5F25D8AD3B00814757 /* SettingsViewController.swift */,
 				FDFC58D725D86C160058A844 /* Main.storyboard */,
-				FDFC58DA25D86C170058A844 /* Assets.xcassets */,
+				FD207A6425D8D2D900814757 /* Assets.xcassets */,
 				FDFC58DC25D86C170058A844 /* LaunchScreen.storyboard */,
 				FDFC58DF25D86C170058A844 /* Info.plist */,
 				FDFC58E625D870340058A844 /* GoogleService-Info.plist */,
@@ -164,7 +164,7 @@
 			files = (
 				FDFC58DE25D86C170058A844 /* LaunchScreen.storyboard in Resources */,
 				FDFC58E725D870340058A844 /* GoogleService-Info.plist in Resources */,
-				FDFC58DB25D86C170058A844 /* Assets.xcassets in Resources */,
+				FD207A6525D8D2D900814757 /* Assets.xcassets in Resources */,
 				FDFC58D925D86C160058A844 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

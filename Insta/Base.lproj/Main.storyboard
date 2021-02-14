@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,60 @@
             <objects>
                 <viewController id="5hx-ZK-DH1" customClass="UploadViewController" customModule="Insta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oT0-iN-Ent">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="3zu-Po-4fv">
+                                <rect key="frame" x="54" y="114" width="306" height="277"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="4aB-0p-Kvg"/>
+                                    <constraint firstAttribute="height" constant="277" id="PAV-e1-7vR"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hx-0V-uHC">
+                                <rect key="frame" x="54" y="431" width="306" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nb-Fy-fxp">
+                                <rect key="frame" x="141" y="480" width="133" height="66"/>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="actionButtonClicked:" destination="5hx-ZK-DH1" eventType="touchUpInside" id="LSR-Br-P5A"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="U9C-BL-aT8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U9C-BL-aT8" firstAttribute="bottom" secondItem="0nb-Fy-fxp" secondAttribute="bottom" constant="267" id="2vT-Zk-jZQ"/>
+                            <constraint firstItem="0nb-Fy-fxp" firstAttribute="leading" secondItem="U9C-BL-aT8" secondAttribute="leading" constant="141" id="67E-5x-eUb"/>
+                            <constraint firstItem="3zu-Po-4fv" firstAttribute="centerX" secondItem="oT0-iN-Ent" secondAttribute="centerX" id="HU6-Bx-9UH"/>
+                            <constraint firstItem="2hx-0V-uHC" firstAttribute="centerX" secondItem="0nb-Fy-fxp" secondAttribute="centerX" id="dAm-WW-aWb"/>
+                            <constraint firstItem="3zu-Po-4fv" firstAttribute="top" secondItem="U9C-BL-aT8" secondAttribute="top" constant="70" id="evG-pX-afW"/>
+                            <constraint firstItem="3zu-Po-4fv" firstAttribute="trailing" secondItem="2hx-0V-uHC" secondAttribute="trailing" id="feM-kS-5gU"/>
+                            <constraint firstItem="0nb-Fy-fxp" firstAttribute="top" secondItem="2hx-0V-uHC" secondAttribute="bottom" constant="15" id="g8A-pf-8W3"/>
+                            <constraint firstItem="3zu-Po-4fv" firstAttribute="leading" secondItem="2hx-0V-uHC" secondAttribute="leading" id="p1p-9W-SUf"/>
+                            <constraint firstItem="2hx-0V-uHC" firstAttribute="centerY" secondItem="oT0-iN-Ent" secondAttribute="centerY" id="tfa-l6-4FJ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="rBg-nT-c74"/>
+                    <connections>
+                        <outlet property="commentText" destination="2hx-0V-uHC" id="eNt-SP-jXG"/>
+                        <outlet property="imageView" destination="3zu-Po-4fv" id="mD6-Oz-qWy"/>
+                        <outlet property="uploadButton" destination="0nb-Fy-fxp" id="tkF-sQ-t7e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KBU-rx-gKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-639" y="378"/>
+            <point key="canvasLocation" x="-639.13043478260875" y="377.67857142857139"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Qcn-mk-ofx">
             <objects>
                 <viewController id="Ibu-pD-C5x" customClass="SettingsViewController" customModule="Insta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Msb-WX-UCQ">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7z-Vc-y1o">
@@ -64,7 +101,7 @@
             <objects>
                 <viewController id="RAi-1M-nlT" customClass="FeedViewController" customModule="Insta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="50I-yC-OaZ">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="QSe-ig-jwr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,7 +115,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Rbi-ST-Kd3">
             <objects>
-                <tabBarController id="et2-lZ-lny" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="et2-lZ-lny" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Oe1-Io-QJe"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4nn-hO-TjR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -100,11 +137,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Insta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPv-6u-GG6">
-                                <rect key="frame" x="272" y="345" width="136" height="77"/>
+                                <rect key="frame" x="258" y="345" width="136" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="2wU-Zp-gEs"/>
                                 </constraints>
@@ -139,7 +176,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32m-Qm-Z2j">
-                                <rect key="frame" x="20" y="345" width="136" height="77"/>
+                                <rect key="frame" x="20" y="345" width="136" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="EOu-Iz-7b7"/>
                                 </constraints>
@@ -184,6 +221,7 @@
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="121"/>
         <image name="s.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="select" width="306" height="277"/>
         <image name="u.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
