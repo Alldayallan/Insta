@@ -12,6 +12,7 @@
 		FD207A5D25D8AD0900814757 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207A5C25D8AD0900814757 /* UploadViewController.swift */; };
 		FD207A6025D8AD3B00814757 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207A5F25D8AD3B00814757 /* SettingsViewController.swift */; };
 		FD207A6525D8D2D900814757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD207A6425D8D2D900814757 /* Assets.xcassets */; };
+		FD91EF1E25E1E30E004DF60A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91EF1D25E1E30E004DF60A /* FeedCell.swift */; };
 		FDFC58D225D86C160058A844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC58D125D86C160058A844 /* AppDelegate.swift */; };
 		FDFC58D425D86C160058A844 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC58D325D86C160058A844 /* SceneDelegate.swift */; };
 		FDFC58D625D86C160058A844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC58D525D86C160058A844 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		FD207A5C25D8AD0900814757 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		FD207A5F25D8AD3B00814757 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FD207A6425D8D2D900814757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD91EF1D25E1E30E004DF60A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		FDFC58CE25D86C160058A844 /* Insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFC58D125D86C160058A844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDFC58D325D86C160058A844 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				FD207A5925D8ACB900814757 /* FeedViewController.swift */,
 				FD207A5C25D8AD0900814757 /* UploadViewController.swift */,
 				FD207A5F25D8AD3B00814757 /* SettingsViewController.swift */,
+				FD91EF1D25E1E30E004DF60A /* FeedCell.swift */,
 				FDFC58D725D86C160058A844 /* Main.storyboard */,
 				FD207A6425D8D2D900814757 /* Assets.xcassets */,
 				FDFC58DC25D86C170058A844 /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD91EF1E25E1E30E004DF60A /* FeedCell.swift in Sources */,
 				FDFC58D625D86C160058A844 /* ViewController.swift in Sources */,
 				FD207A5D25D8AD0900814757 /* UploadViewController.swift in Sources */,
 				FDFC58D225D86C160058A844 /* AppDelegate.swift in Sources */,
